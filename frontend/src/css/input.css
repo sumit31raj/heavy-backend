@@ -1,0 +1,108 @@
+/*body{
+  background: url('../assets/bg.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#form{
+    height: 60%;
+    width: 50%;
+}
+
+#inputLabel{
+    height: 29px;
+    width: 400px;
+    margin: 16% 3% 1% 11%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#showError{
+    color: red;
+    margin: 1% 0% 0% 6%;
+    width: 100%;
+    text-align: start;
+}
+
+#input{
+    width: 87%;
+    padding: 12px 20px;
+    margin: 25px -53px 0px -59px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+#submitBtn{
+    padding: 6px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    margin: 5% -19% 0% -19%;
+  }
+
+#container{
+    width: 39%;
+    padding: 12px 20px;
+    margin: 122px 1px 0px 414px;
+    box-sizing: border-box;
+    outline: none;
+    height: 379px;
+    text-align: center;
+}
+
+#checkStatus{
+    color: #fff!important;
+    background-color: #000!important;
+    margin: 0% 0% 0% 1%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 28px;
+    border:none;
+    font-weight: 600;
+}
+#statusDiv{
+    margin: 1% 0% 0% 10%;
+    height: 30%;
+    width: 80%;
+   
+}
+
+#statusInput{
+    width: 35%;
+    padding: 12px 20px;
+    margin: 25px -53px 7px -59px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 10px;
+    outline: none;
+}
+#statusInput[type=text]:focus {
+    background-color: lightblue;
+  }
+  
+  #statusError{
+    color: red;
+    margin: 21% 0% 0% 50%;
+    width: 100%;
+  }
+
+  #statusErrContainer{
+    height: 20px;
+    width: 64%;
+    text-align: start;
+    margin: -2% 0% 0% 0%;
+  } */

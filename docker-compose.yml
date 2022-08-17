@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  postgres:
+    network_mode: host
+    image: postgres:14.1-alpine
+    restart: always
+    env_file:
+      - consumer/.env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  redis:
+    network_mode: host
+    image: redis:alpine
+    restart: always
+    volumes:
+      - redis:/data
+  backend-server:
+    network_mode: host
+    working_dir: /home/app/backend
+    build:
+      context: ./server-backend
+    command: ["yarn", "start:prod"]
+    depends_on:
+      - postgres
+    env_file:
+      - server-backend/.env
+  frontend:
+    network_mode: host
+    working_dir: /home/app/frontend
+    build:
+      context: ./frontend
+    command: ["yarn", "start"]
+    env_file:
+      - frontend/.env
+  consumer:
+    network_mode: host
+    working_dir: /home/app/consumer
+    build:
+      context: ./consumer
+    command: ["yarn", "start"]
+    env_file:
+      - consumer/.env
+volumes:
+  postgres:
+    driver: local
+  redis:
+    driver: local
